@@ -85,9 +85,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <ConformanceMode>false</ConformanceMode>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,14 +139,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Array.h" />
+    <ClInclude Include="DynamicList.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="SeqList.h" />
     <ClInclude Include="smartpoint.h" />
     <ClInclude Include="Sort.h" />
+    <ClInclude Include="StaticArray.h" />
+    <ClInclude Include="StaticList.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Array.cpp" />
+    <ClCompile Include="DynamicList.cpp" />
+    <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="List.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Object.cpp" />
+    <ClCompile Include="SeqList.cpp" />
     <ClCompile Include="Sort.cpp" />
+    <ClCompile Include="StaticArray.cpp" />
+    <ClCompile Include="StaticList.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

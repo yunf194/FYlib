@@ -1,6 +1,8 @@
 #ifndef SMARTPOINTER_H
 #define SMARTPOINTER_H
 
+#include "Object.h"
+
 namespace FYLib
 {
 
@@ -11,7 +13,7 @@ namespace FYLib
 **3.杜绝指针运算和指针比较
 */
 template <typename T>
-class SmartPointer
+class SmartPointer : public Object
 {
 protected:
 	T* m_pointer;
